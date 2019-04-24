@@ -4,14 +4,14 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-import java.util.ArrayList;
+import java.util.HashMap;
 
-import static com.sm9.zoneutilities.ZoneUtilities.zoneList;
+import static com.sm9.zoneutilities.ZoneUtilities.zoneMap;
 
 public class ForgeEvents {
     public static void preInit(FMLPreInitializationEvent evEvent) {
         MinecraftForge.EVENT_BUS.register(new ForgeEvents());
-        zoneList = new ArrayList<>();
+        zoneMap = new HashMap<>();
 
     }
 

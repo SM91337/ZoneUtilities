@@ -6,4 +6,8 @@ public class ZoneActions {
     public String enterMessage;
     public String leaveMessage;
     public Potion[] potionEffects;
+
+    public ZoneActions() {
+
+    }
 }

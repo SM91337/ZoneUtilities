@@ -9,7 +9,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
 
 import java.io.File;
-import java.util.ArrayList;
+import java.util.HashMap;
 
 @Mod
         (
@@ -25,7 +25,7 @@ public final class ZoneUtilities {
     public static Configuration mainConfig;
     public static File rootConfigFolder;
     public static Logger ZULogger;
-    public static ArrayList<Zone> zoneList;
+    public static HashMap<String, Zone> zoneMap;
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent evEvent) {
